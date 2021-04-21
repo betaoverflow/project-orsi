@@ -1,6 +1,7 @@
 {
-  "name": "react-responsive-navbar",
+  "name": "orsi-durgapur",
   "version": "0.1.0",
+  "author":"Aniket",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.4",
