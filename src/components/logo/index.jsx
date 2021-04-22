@@ -8,8 +8,8 @@ const LogoWrapper = styled.div`
 `;
 
 const LogoImg = styled.div`
-  width: 50px;
-  height: 50px;
+  width: 80px;
+  height: 80px;
 
   img {
     width: 100%;
