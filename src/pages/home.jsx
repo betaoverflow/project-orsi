@@ -20,23 +20,53 @@ export const Image = styled.img`
 export const BackgroundImage = styled.img`
     height:650px;
     width:1935px;
-    margin-left:-200px;
+    margin-left:-150px;
     margin-bottom:-20px;
 `;
 
-export const Heading = styled.h1`
+export const Heading = styled.div`
     font-size:50px;
     position:absolute;
     top:230px;
     left:70px;
+    font-weight:600;
+    align-item: 'justify';
+    text-align:left;
 `;
 
-export const SubHeading = styled.h1`
-    font-size:50px;
+
+export const Content = styled.h5`
+    font-size:25px;
     position:absolute;
-    top:470px;
-    left:70px;
+    color: grey;
+    align-item: 'justify';
+    text-align:left;
+    font-weight: 100;
 `;
+
+const Button = styled.button`
+  border: 0;
+  position: absolute;
+  left:0;
+  margin-left:70px;
+  margin-top: -120px;
+  padding: 10px 1em;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 600;
+  border-radius: 5px;
+  background-color: royalblue;
+  border: 2px solid royalblue;
+  transition: all 240ms ease-in-out;
+  cursor: pointer;
+  box-shadow: 2px 2px 25px #6797e7;
+  &:hover {
+    color: #fff;
+    background-color: royalblue;
+  }
+
+`;
+
 
 
 
@@ -45,10 +75,10 @@ function home() {
         <Container>
             <Image src={require('../assets/images/robot.png').default} />
             <BackgroundImage src={require('../assets/images/home-bg.png').default} />
-            <Heading>Operational Research </Heading>
-            <Heading style={{ top: '310px' }}>Society Of India</Heading>
-            <SubHeading>Durgapur Chapter</SubHeading>
-
+            <Heading>Operational Research <br />Society Of India, Durgapur
+            <Content>A forum for Operational Research scientists as well as an avenue to  widen their horizon by exchange of knowledge and application of techniques</Content>
+            </Heading>
+            <Button>Download Brochure</Button>
         </Container>
     )
 }
