@@ -1,86 +1,106 @@
-import React from 'react';
-import styled from 'styled-components';
+import React from "react";
+import styled from "styled-components";
 
 export const Container = styled.div`
-    background-image: linear-gradient(to right, #6a11cb 0%, #2575fc 100%);
-    direction:'flex';
-    flex-direction:'row';
-    overflow:hidden;
-    
+	background-image: linear-gradient(to right, #6a11cb 0%, #2575fc 100%);
+	direction: "flex";
+	flex-direction: "row";
+	overflow: hidden;
 `;
 
 export const Image = styled.img`
-    height:450px;
-    margin-top: 200px;
-    margin-left:800px;
-    position:absolute;
-    top:0;
+	margin-top: 12em;
+	margin-left: -5em;
+	width: 100%;
+	max-width: 40em;
+	height: auto;
+	top: 0;
+	@media only screen and (min-width: 1000px) {
+		position: absolute;
+	}
 `;
 
 export const BackgroundImage = styled.img`
-    height:650px;
-    width:1935px;
-    margin-left:-150px;
-    margin-bottom:-20px;
+	height: 40em;
+	width: 120%;
+	margin-left: -10em;
+	margin-bottom: -2em;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
 `;
 
 export const Heading = styled.div`
-    font-size:50px;
-    position:absolute;
-    top:230px;
-    left:70px;
-    font-weight:600;
-    align-item: 'justify';
-    text-align:left;
+	@media screen and (min-width: 765px) {
+		font-size: 2.6em;
+	}
+	@media screen and (max-width: 765px) {
+		font-size: 2em;
+	}
+	position: absolute;
+	top: 5em;
+	left: 1em;
+	font-weight: 600;
+	align-item: "justify";
+	text-align: left;
 `;
-
 
 export const Content = styled.h5`
-    font-size:25px;
-    position:absolute;
-    color: grey;
-    align-item: 'justify';
-    text-align:left;
-    font-weight: 100;
+	font-size: 0.6em;
+	position: absolute;
+	color: grey;
+	align-item: "justify";
+	text-align: left;
+	font-weight: 100;
 `;
-
+export const Close = styled.div`
+	height: 100%;
+`;
 const Button = styled.button`
-  border: 0;
-  position: absolute;
-  left:0;
-  margin-left:70px;
-  margin-top: -120px;
-  padding: 10px 1em;
-  color: #fff;
-  font-size: 18px;
-  font-weight: 600;
-  border-radius: 5px;
-  background-color: royalblue;
-  border: 2px solid royalblue;
-  transition: all 240ms ease-in-out;
-  cursor: pointer;
-  box-shadow: 2px 2px 25px #6797e7;
-  &:hover {
-    color: #fff;
-    background-color: royalblue;
-  }
-
+	border: 0;
+	left: 0;
+	margin-top: 3em;
+	padding: 10px 1em;
+	color: #fff;
+	font-size: 18px;
+	font-weight: 600;
+	border-radius: 5px;
+	background-color: royalblue;
+	border: 2px solid royalblue;
+	transition: all 240ms ease-in-out;
+	cursor: pointer;
+	box-shadow: 2px 2px 25px #6797e7;
+	&:hover {
+		color: #fff;
+		background-color: royalblue;
+	}
 `;
-
-
-
 
 function home() {
-    return (
-        <Container>
-            <Image src={require('../assets/images/robot.png').default} />
-            <BackgroundImage src={require('../assets/images/home-bg.png').default} />
-            <Heading>Operational Research <br />Society Of India, Durgapur
-            <Content>A forum for Operational Research scientists as well as an avenue to  widen their horizon by exchange of knowledge and application of techniques</Content>
-            </Heading>
-            <Button>Download Brochure</Button>
-        </Container>
-    )
+	return (
+		<Container>
+			<BackgroundImage
+				src={require("../assets/images/home-bg.png").default}
+			/>
+			<Close>
+				<Heading>
+					Operational Research <br />
+					Society Of India, Durgapur
+					<Content>
+						A forum for Operational Research scientists as well as
+						an avenue to widen their horizon by exchange of
+						knowledge and application of techniques
+						<br />
+						<Button>Download Brochure</Button>
+					</Content>
+					{/* <Button>Download Brochure</Button> */}
+				</Heading>
+			</Close>
+
+			<Image src={require("../assets/images/robot.png").default} />
+		</Container>
+	);
 }
 
-export default home
+export default home;
