@@ -46,7 +46,6 @@ export const TopLine = styled.div`
 `;
 
 export const Img = styled.img`
-  border: 0;
   max-width: 100%;
   vertical-align: middle;
   display: inline-block;
@@ -89,17 +88,16 @@ export const Container = styled.div`
 export const Button = styled.button`
 border: 0;
 	left: 0;
-	margin-top: 3em;
 	padding: 10px 1em;
 	color: #fff;
-	font-size: 18px;
+	font-size: 20px;
 	font-weight: 600;
 	border-radius: 5px;
 	background-color: royalblue;
 	border: 2px solid royalblue;
 	transition: all 240ms ease-in-out;
 	cursor: pointer;
-	box-shadow: 2px 2px 25px #6797e7;
+	box-shadow: 2px 2px 15px #6797e7;
 	&:hover {
 		color: #fff;
 		background-color: royalblue;

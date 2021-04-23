@@ -101,10 +101,10 @@ const Button = styled.button`
 	border: 2px solid royalblue;
 	transition: all 240ms ease-in-out;
 	cursor: pointer;
-	box-shadow: 2px 2px 25px #6797e7;
+    box-shadow: 2px 2px 17px #6797e7;
 	&:hover {
-		color: #fff;
-		background-color: royalblue;
+    color: #fff;
+    background-color: royalblue;
 	}
     @media screen and (max-width: 580px){
         font-size: 15px;
