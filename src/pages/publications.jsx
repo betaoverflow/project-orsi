@@ -1,9 +1,13 @@
-import React from 'react'
+import React from 'react';
+import Info from "../components/InfoSection/InfoSection";
+import { ObjOne, ObjTwo} from "../components/InfoSection/data";
 
 function publications() {
     return (
         <div>
-            <h1>Publications</h1>
+            
+      <Info {...ObjOne} />
+      <Info {...ObjTwo} />
         </div>
     )
 }

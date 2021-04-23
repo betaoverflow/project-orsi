@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import
     {
   Container,
@@ -40,11 +39,11 @@ function InfoSection({
                 <TopLine lightTopLine={lightTopLine}>{topLine}</TopLine>
                 <Heading lightText={lightText}>{headline}</Heading>
                 <Subtitle lightTextDesc={lightTextDesc}>{description}</Subtitle>
-                <Link to={linkTo}>
-                  <Button big fontBig >
+                <a href={linkTo} target="_blank">
+                  <Button>
                     {buttonLabel}
                   </Button>
-                </Link>
+                  </a>
               </TextWrapper>
             </InfoColumn>
             <InfoColumn>

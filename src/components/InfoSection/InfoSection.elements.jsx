@@ -8,16 +8,12 @@ export const InfoSec = styled.div`
 
 export const InfoRow = styled.div`
   display: flex;
-  margin: 0 -15px -15px -15px;
   flex-wrap: wrap;
   align-items: center;
   flex-direction: ${({ imgStart }) => (imgStart ? 'row-reverse' : 'row')};
 `;
 
 export const InfoColumn = styled.div`
-  margin-bottom: 15px;
-  padding-right: 15px;
-  padding-left: 15px;
   flex: 1;
   max-width: 50%;
   flex-basis: 50%;
@@ -30,36 +26,36 @@ export const InfoColumn = styled.div`
 `;
 
 export const TextWrapper = styled.div`
-  max-width: 540px;
-  padding-top: 0;
-  padding-bottom: 60px;
   @media screen and (max-width: 768px) {
     padding-bottom: 65px;
   }
 `;
 
 export const ImgWrapper = styled.div`
-  max-width: 555px;
   display: flex;
   justify-content: ${({ start }) => (start ? 'flex-start' : 'flex-end')};
 `;
 
 export const TopLine = styled.div`
   color: ${({ lightTopLine }) => (lightTopLine ? '#a9b3c1' : '#4B59F7')};
-  font-size: 18px;
-  line-height: 16px;
-  font-weight: 700;
-  letter-spacing: 1.4px;
-  margin-bottom: 16px;
+  // font-size: 18px;
+  // line-height: 16px;
+  // font-weight: 700;
+  // letter-spacing: 1.4px;
+  // margin-bottom: 16px;
 `;
 
 export const Img = styled.img`
-  padding-right: 0;
   border: 0;
   max-width: 100%;
   vertical-align: middle;
   display: inline-block;
   max-height: 500px;
+  padding-right:30px;
+  padding-left:30px;
+  @media screen and (min-width: 768px) {
+    width: 80%;
+  }
 `;
 
 export const Heading = styled.h1`
@@ -71,17 +67,15 @@ export const Heading = styled.h1`
 `;
 
 export const Subtitle = styled.p`
-  max-width: 440px;
   margin-bottom: 35px;
-  font-size: 18px;
-  line-height: 24px;
+  font-size: 22px;
+  line-height: 2;
   color: ${({ lightTextDesc }) => (lightTextDesc ? '#a9b3c1' : '#1c2237')};
 `;
 
 export const Container = styled.div`
   z-index: 1;
   width: 100%;
-  max-width: 1300px;
   margin-right: auto;
   margin-left: auto;
   padding-right: 50px;
@@ -93,24 +87,24 @@ export const Container = styled.div`
 `;
 
 export const Button = styled.button`
-  border-radius: 4px;
-  border-radius: 5px;
-    background-color: royalblue;
-    border: 2px solid royalblue;
-  white-space: nowrap;
-  padding: ${({ big }) => (big ? '12px 64px' : '10px 20px')};
-  color: #fff;
-  font-size: ${({ fontBig }) => (fontBig ? '20px' : '16px')};
-  outline: none;
-  box-shadow: 2px 2px 25px #6797e7;
-  border: none;
-  cursor: pointer;
-  &:hover {
-    transition: all 0.3s ease-out;
-    background: #fff;
-    background-color:blue;
-  }
-  @media screen and (max-width: 960px) {
-    width: 100%;
-  }
+border: 0;
+	left: 0;
+	margin-top: 3em;
+	padding: 10px 1em;
+	color: #fff;
+	font-size: 18px;
+	font-weight: 600;
+	border-radius: 5px;
+	background-color: royalblue;
+	border: 2px solid royalblue;
+	transition: all 240ms ease-in-out;
+	cursor: pointer;
+	box-shadow: 2px 2px 25px #6797e7;
+	&:hover {
+		color: #fff;
+		background-color: royalblue;
+	}
+    @media screen and (max-width: 580px){
+        font-size: 15px;
+    }
 `;
