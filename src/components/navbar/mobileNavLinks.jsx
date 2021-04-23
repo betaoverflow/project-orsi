@@ -11,7 +11,7 @@ const NavLinksContainer = styled.div`
 
 const LinksWrapper = styled.ul`
   margin: 0;
-  padding: 0;
+  padding: 10px;
   display: flex;
   height: 100%;
   list-style: none;
@@ -19,26 +19,32 @@ const LinksWrapper = styled.ul`
   width: 100%;
   flex-direction: column;
   position: fixed;
-  top: 65px;
+  top: 80px;
   left: 0;
 `;
 
 const LinkItem = styled.li`
   width: 100%;
   padding: 0 1.1em;
+  padding-top: 10px;
   color: #222;
   font-weight: 500;
   font-size: 18px;
   display: flex;
 
-  margin-bottom: 10px;
+
 `;
 
 const Link = styled.a`
   text-decoration: none;
   color: inherit;
   font-size: inherit;
+  &:hover {
+    transition: all 0.2s ease-in-out;
+      border-bottom: 2px solid royalblue;
+  }
 `;
+
 
 const Marginer = styled.div`
   height: 2em;

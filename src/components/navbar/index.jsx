@@ -6,6 +6,7 @@ import { Accessibility } from "./accessibility";
 import { NavLinks } from "./navLinks";
 import { DeviceSize } from "../responsive";
 import { MobileNavLinks } from "./mobileNavLinks";
+import {useEffect, useState} from "react";
 
 const NavbarContainer = styled.div`
   width: 100%;
@@ -14,6 +15,15 @@ const NavbarContainer = styled.div`
   display: flex;
   align-items: center;
   padding: 0 1.5em;
+  justify-content: center;
+  font-size: 1rem;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+
+  @media screen and (max-width: 960px) {
+    transition: 0.8s all ease;
+  }
 `;
 
 const LeftSection = styled.div`
@@ -32,8 +42,8 @@ const RightSection = styled.div`
 `;
 
 export function Navbar(props) {
-  const isMobile = useMediaQuery({ maxWidth: DeviceSize.mobile });
-
+  const isMobile = useMediaQuery({ maxWidth: DeviceSize.tablet });
+  
   return (
     <NavbarContainer>
       <LeftSection>
