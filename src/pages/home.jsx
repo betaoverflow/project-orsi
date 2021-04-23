@@ -23,7 +23,9 @@ export const Image = styled.img`
 export const BackgroundImage = styled.img`
 	height: 40em;
 	width: 120%;
-	margin-left: -10em;
+	@media screen and (min-width: 765px) {
+		margin-left: -10em;
+	}
 	margin-bottom: -2em;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -79,27 +81,27 @@ const Button = styled.button`
 
 function home() {
 	return (
-		<Container>
-			<BackgroundImage
-				src={require("../assets/images/home-bg.png").default}
-			/>
-			<Close>
-				<Heading>
-					Operational Research <br />
-					Society Of India, Durgapur
-					<Content>
-						A forum for Operational Research scientists as well as
-						an avenue to widen their horizon by exchange of
-						knowledge and application of techniques
-						<br />
-						<Button>Download Brochure</Button>
-					</Content>
-					{/* <Button>Download Brochure</Button> */}
-				</Heading>
-			</Close>
-
-			<Image src={require("../assets/images/robot.png").default} />
-		</Container>
+		<div>
+			<Container>
+				<BackgroundImage
+					src={require("../assets/images/home-bg.png").default}
+				/>
+				<Close>
+					<Heading>
+						Operational Research <br />
+						Society Of India, Durgapur
+						<Content>
+							A forum for Operational Research scientists as well
+							as an avenue to widen their horizon by exchange of
+							knowledge and application of techniques
+							<br />
+							<Button>Download Brochure</Button>
+						</Content>
+					</Heading>
+				</Close>
+			</Container>
+			<Image src={require("../assets/images/robot.png").default}/>
+		</div>
 	);
 }
 
