@@ -6,7 +6,6 @@ import { Accessibility } from "./accessibility";
 import { NavLinks } from "./navLinks";
 import { DeviceSize } from "../responsive";
 import { MobileNavLinks } from "./mobileNavLinks";
-import {useEffect, useState} from "react";
 
 const NavbarContainer = styled.div`
   width: 100%;
@@ -20,6 +19,7 @@ const NavbarContainer = styled.div`
   position: sticky;
   top: 0;
   z-index: 10;
+  background:#fff;
 
   @media screen and (max-width: 960px) {
     transition: 0.8s all ease;

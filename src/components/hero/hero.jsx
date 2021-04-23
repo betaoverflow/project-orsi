@@ -6,6 +6,7 @@ export const Container = styled.div`
 	direction: "flex";
 	flex-direction: "row";
 	overflow: hidden;
+    height: 40em;
 `;
 
 export const Image = styled.img`
@@ -18,15 +19,37 @@ export const Image = styled.img`
 	@media only screen and (min-width: 1000px) {
 		position: absolute;
 	}
+    @media screen and (max-width: 580px) {
+		margin-top: 31em;
+	margin-left: -6em;
+	width: 70%;
+    position:absolute;
+	}
+    @media screen and (min-width: 580px) and (max-width: 768px) {
+		margin-top: 0em;
+	margin-left: -5em;
+	width: 80%;
+	}
+    @media screen and (min-width: 768px) and (max-width: 992px) {
+		margin-top: 25em;
+	margin-left: -10em;
+	width: 70%;
+    position:absolute;
+	}
 `;
 
 export const BackgroundImage = styled.img`
 	height: 40em;
 	width: 120%;
-	@media screen and (min-width: 765px) {
-		margin-left: -10em;
+    @media screen and (max-width: 580px) {
+		width:180%;
 	}
-	margin-bottom: -2em;
+    @media screen and (min-width: 580px) and (max-width: 768px) {
+		width:140%;
+	}
+    @media screen and (min-width: 768px) and (max-width: 992px) {
+		width:130%;
+	}
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -34,11 +57,17 @@ export const BackgroundImage = styled.img`
 `;
 
 export const Heading = styled.div`
-	@media screen and (min-width: 765px) {
+	@media screen and (min-width: 768px) {
 		font-size: 2.6em;
 	}
-	@media screen and (max-width: 765px) {
+	@media screen and (max-width: 768px) {
+		font-size: 2.2em;
+	}
+    @media screen and (min-width:400px) and (max-width: 580px) {
 		font-size: 2em;
+	}
+    @media screen and (max-width: 400px) {
+		font-size: 1.7em;
 	}
 	position: absolute;
 	top: 5em;
@@ -77,6 +106,9 @@ const Button = styled.button`
 		color: #fff;
 		background-color: royalblue;
 	}
+    @media screen and (max-width: 580px){
+        font-size: 15px;
+    }
 `;
 
 function hero() {
