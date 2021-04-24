@@ -70,6 +70,23 @@ const Heading = styled.h1`
   color: #000;
 `;
 
+const Subtitle = styled.p`
+  margin-bottom: 35px;
+  font-size: 17px;
+  line-height: 1.8;
+  color: #1c2237;
+  padding:5px;
+  margin-left:4%;
+  margin-right:4%;
+  text-align:left !important;
+`;
+const SmallText = styled.p`
+  font-size: 14px;
+  text-align:left !important;
+  color: grey;
+  margin-left: 4%;
+`;
+
 function createCard(teamData)
 {
   return (
@@ -84,6 +101,27 @@ function createCard(teamData)
   );
 }
 
+const Button = styled.button`
+	border: 0;
+	left: 0;
+	padding: 10px 1em;
+	color: #fff;
+	font-size: 18px;
+	font-weight: 600;
+	border-radius: 5px;
+	background-color: royalblue;
+	border: 2px solid royalblue;
+	transition: all 240ms ease-in-out;
+	cursor: pointer;
+    box-shadow: 2px 2px 17px #6797e7;
+	&:hover {
+    color: #fff;
+    background-color: royalblue;
+	}
+    @media screen and (max-width: 580px){
+        font-size: 15px;
+    }
+`;
 
 
 function members() {
@@ -95,12 +133,16 @@ function members() {
       <Grid lg={12} item container spacing={3} align='center'>
         {teamData.map(createCard)}
       </Grid>
-
+      <a href="http://" target="_blank">
+      <Button>List of Members</Button></a>
       <ThemeProvider theme={theme}>
         <Heading>Membership Subscription</Heading>
       </ThemeProvider>
       <Table />
-
+      <SmallText>* Life member, willing to have laminated Identity Card, is to pay further INR 200/- along with the application.</SmallText>
+      <Subtitle>OPSEARCH, the quarterly journal of the Society, is free for members, other than student members. Issues already published in a year prior to the date of payment of subscription is not guaranteed.</Subtitle>
+      <a href="http://" target="_blank">
+      <Button>Download Membership Form</Button></a>
     </div>
    
   );
