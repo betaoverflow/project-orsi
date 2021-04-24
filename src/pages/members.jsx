@@ -127,13 +127,13 @@ const Button = styled.button`
 function members() {
    
   return (
-    <div className='App'>
+    <div className='App' style={{overflow:'hidden'}}>
       <InfoSection {...durgapurChapter} />
       <Heading>Team</Heading>
       <Grid lg={12} item container spacing={3} align='center'>
         {teamData.map(createCard)}
       </Grid>
-      <a href="http://" target="_blank">
+      <a href={require('../assets/data/dgp_members_list.xlsx').default} target="_blank">
       <Button>List of Members</Button></a>
       <ThemeProvider theme={theme}>
         <Heading>Membership Subscription</Heading>
@@ -141,7 +141,7 @@ function members() {
       <Table />
       <SmallText>* Life member, willing to have laminated Identity Card, is to pay further INR 200/- along with the application.</SmallText>
       <Subtitle>OPSEARCH, the quarterly journal of the Society, is free for members, other than student members. Issues already published in a year prior to the date of payment of subscription is not guaranteed.</Subtitle>
-      <a href="http://" target="_blank">
+      <a href={require('../assets/data/Membership_Application.pdf').default} target="_blank">
       <Button>Download Membership Form</Button></a>
     </div>
    
