@@ -10,7 +10,7 @@ const theme = createMuiTheme({
       fontSize: '48px',
       fontWeight:600,
       lineHeight:1.1,
-      color: 'royalblue',
+      color: '#000',
       padding:'2%',
       marginTop:'5%',
     },

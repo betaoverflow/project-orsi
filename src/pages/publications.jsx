@@ -7,7 +7,7 @@ const Heading = styled.h1`
   font-size: 48px;
   line-height: 1.1;
   font-weight: 600;
-  color: royalblue;
+  color: #000;
 `;
 
 const Subtitle = styled.p`
