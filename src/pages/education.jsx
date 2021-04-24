@@ -7,15 +7,15 @@ import styled from "styled-components";
 const theme = createMuiTheme({
   typography: {
     h3 :{
-      fontSize: '60px',
-      color: '#ff5252',
+      fontSize: '48px',
+      fontWeight:600,
+      lineHeight:1.1,
+      color: 'royalblue',
       padding:'2%',
-      '@media (max-width:800px)': {
-        fontSize: '2rem',
-      },
+      marginTop:'5%',
     },
     h5: {
-      fontSize: '1.7rem',
+      fontSize: '1.5rem',
       lineHeight: 1.4,
       padding: '5%',
       marginTop:'-3%',
@@ -34,7 +34,7 @@ const Button = styled.button`
 	padding: 15px 2em;
 	color: #fff;
 	font-size: 15px;
-  margin:20px;
+  margin:10px;
 	font-weight: 600;
 	border-radius: 5px;
 	background-color: royalblue;
@@ -78,9 +78,12 @@ export default function ResponsiveFontSizes() {
         the Operational Research Society of India started an Examination System in 1973.
         </Typography>
         <Container>
-        <Button>Prospectus</Button>
-        <Button>Registration Form</Button>
-        <Button>Examination Form</Button>
+        <a href="http://www.orsihq.in/assets/assets-custom/forms/Prospectus-Revised.pdf" target="_blank">
+        <Button>Prospectus</Button></a>
+        <a href="http://www.orsihq.in/assets/assets-custom/forms/Registration%20Form.pdf" target="_blank">
+        <Button>Registration Form</Button></a>
+        <a href="http://www.orsihq.in/assets/assets-custom/forms/Examination-Form.pdf" target="_blank">
+        <Button>Examination Form</Button></a>
         </Container>
         
       </ThemeProvider>
