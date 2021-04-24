@@ -69,7 +69,7 @@ export const Subtitle = styled.p`
   margin-bottom: 35px;
   font-size: 22px;
   line-height: 2;
-  color: ${({ lightTextDesc }) => (lightTextDesc ? '#a9b3c1' : '#1c2237')};
+  color: ${({ lightTextDesc }) => (lightTextDesc ? 'grey' : '#1c2237')};
 `;
 
 export const Container = styled.div`
