@@ -10,7 +10,7 @@ const Footer = () => {
     <FooterContainer>
       <FooterWrap>
             <WebsiteRights>
-              ORSI © {new Date().getFullYear()} All rights reserved.
+              ORSI Durgapur © {new Date().getFullYear()} All rights reserved.
             </WebsiteRights>
       </FooterWrap>
     </FooterContainer>
