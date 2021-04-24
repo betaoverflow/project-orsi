@@ -28,7 +28,7 @@ export const objectiveOrsi = {
     description:
       'The Society is devoted to promotion and propagation of knowledge in Operational Research. ORSI publishes a Quarterly Journal OPSEARCH, which brings out high quality and state of the art papers in Operational Research. Since 1973 it also conducts an examination on Graduate Diploma In Operational Research to provide opportunities to professionals and students to equip themselves with knowledge of Operational Research.ORSI is a non-profit making educational institution. ',
     imgStart: 'start',
-    img: require('../assets/images/objective.png').default,
+    img: require('../assets/images/home.gif').default,
     alt: 'Vault',
     start: 'true'
 };
