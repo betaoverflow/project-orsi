@@ -67,7 +67,7 @@ const Heading = styled.h1`
   font-size: 48px;
   line-height: 1.1;
   font-weight: 600;
-  color: royalblue;
+  color: #000;
 `;
 
 function createCard(teamData)
@@ -91,13 +91,13 @@ function members() {
   return (
     <div className='App'>
       <InfoSection {...durgapurChapter} />
-      <Heading>TEAM</Heading>
+      <Heading>Team</Heading>
       <Grid lg={12} item container spacing={3} align='center'>
         {teamData.map(createCard)}
       </Grid>
 
       <ThemeProvider theme={theme}>
-        <Typography variant="h3">Membership Subscription</Typography>
+        <Heading>Membership Subscription</Heading>
       </ThemeProvider>
       <Table />
 
