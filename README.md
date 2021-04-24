@@ -1,7 +1,5 @@
 <p align='center'><img src='orsi-logo.png' width='200' ></p>
-<!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-2-orange.svg?style=flat-square)](#contributors-)
-<!-- ALL-CONTRIBUTORS-BADGE:END -->
+
 <h1 align='center'> Operational Research Society of India </h1>
 
 <p align='center'>The Operational Research Society of India (ORSI) was founded in 1957 to provide a forum for the Operational Research Scientists to widen their horizon by exchange of knowledge and application of techniques. The Society is affiliated to the International Federation of Operational Research Societies (IFORS) and Asia Pacific Operational Research Societies (APORS). ORSI is the representative of IFORS and APORS in India.</p>
