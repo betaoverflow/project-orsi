@@ -7,6 +7,7 @@ import Education from "./pages/education";
 import Members from "./pages/members";
 import Publications from "./pages/publications";
 import Footer from "./components/footer/footer";
+import Events from "./pages/events";
 
 function App() {
   return (
@@ -17,7 +18,7 @@ function App() {
           <Route path="/" exact component={Home} />
           <Route path="/members" exact component={Members} />
           <Route path="/education" exact component={Education} />
-          <Route path="/contact" exact component={Contact} />
+          <Route path="/events" exact component={Events} />
           <Route path="/publications" exact component={Publications} />
         </Switch>
         <Footer />

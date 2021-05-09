@@ -26,3 +26,16 @@ export const ObjOne = {
     img: require("../../assets/images/opresearch-graph.jpg").default,
     alt: "image",
   };
+
+  export const ObjThree = {
+    lightBg: true,
+    lightText: false,
+    lightTextDesc: false,
+    headline:"AGM 2021",
+    description:
+      "The Annual General Meeting of 2021 where budget allocation, discussion on future events and dicussion on operational research was done.",
+    imgStart: false,
+    start:false,
+    img: require("../../assets/images/agm.jpeg").default,
+    alt: "image",
+  };

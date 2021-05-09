@@ -52,6 +52,9 @@ export function NavLinks(props) {
           <Link href="/publications">Publications</Link>
         </LinkItem>
         <LinkItem>
+          <Link href="/events">Events</Link>
+        </LinkItem>
+        <LinkItem>
           <Link href="/education">Education</Link>
         </LinkItem>
         <LinkItem>
