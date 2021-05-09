@@ -47,7 +47,7 @@ export default function CustomizedTables() {
             </a>
             </StyledTableRow>
             <StyledTableRow>
-            <StyledTableCell>2021-09-26</StyledTableCell>
+            <StyledTableCell>2020-09-26</StyledTableCell>
             <a href={require('../../assets/data/Brochure Webinar Sep 2020.pdf').default} target="_blank">
               <StyledTableCell >Two-Day Webinar On Application of Data Science and Soft Skill</StyledTableCell>
             </a>

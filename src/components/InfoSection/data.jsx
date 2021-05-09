@@ -33,7 +33,7 @@ export const ObjOne = {
     lightTextDesc: false,
     headline:"AGM 2021",
     description:
-      "The Annual General Meeting of 2021 where budget allocation, discussion on future events and dicussion on operational research was done.",
+      "The Annual General Meeting was held on 23rd March 2021. There was discussion on future events and on operational research. The budget allocation was also done in the meeting.",
     imgStart: false,
     start:false,
     img: require("../../assets/images/agm.jpeg").default,
