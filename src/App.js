@@ -20,6 +20,7 @@ function App() {
           <Route path="/education" exact component={Education} />
           <Route path="/events" exact component={Events} />
           <Route path="/publications" exact component={Publications} />
+          <Route path="/contact" exact component={Contact} />
         </Switch>
         <Footer />
       </div>
