@@ -31,6 +31,8 @@ const theme = createMuiTheme({
 const Button = styled.button`
 	border: 0;
 	left: 0;
+  height: 4rem;
+  width: 12rem;
 	padding: 15px 2em;
 	color: #fff;
 	font-size: 15px;

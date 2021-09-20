@@ -34,7 +34,7 @@ const LoginButton = styled.button`
 export function Accessibility(props) {
   return (
     <AccessibilityContainer>
-      <Link to={{ pathname:'http://orsihq.in/application_form.html'}} target="_blank">
+      <Link to={{ pathname:'https://orsihq.org/administration/'}} target="_blank">
       <LoginButton>Join Us</LoginButton>
       </Link>
 

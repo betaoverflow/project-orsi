@@ -55,8 +55,8 @@ const durgapurChapter = {
   headline: 'About Durgapur Chapter',
   description:
     'ORSI Durgapur is a very active chapter. There are more than 55 members in this chapter. Over the year many seminars, conferences, workshops are being organized. Mr. Salil Kumar Dutta & Dr. Kajla Basu served as president & vice president of the chapter for long time.There are many more active members of the society who are actively taking part to organize various program jointly with other organizations.',
-  buttonLabel: 'Membership Form',
-  linkTo:'http://orsihq.in/application_form.html',
+  buttonLabel: 'Become a member',
+  linkTo:'https://orsihq.org/administration/',
   imgStart: '',
   img: require('../assets/images/orsi-durgapur.jpeg').default,
   alt: 'postman api',

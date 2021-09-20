@@ -14,6 +14,9 @@ export const MyCard = styled.div`
     };
     padding: 1.5em;
     border-radius: 10px;
+    @media screen and (max-width: 768px) {
+        height: 13rem;
+    }
 `
 
 export const CardIconBg = styled.div`

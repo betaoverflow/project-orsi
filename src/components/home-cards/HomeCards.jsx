@@ -13,6 +13,10 @@ export const AllCards = styled.div`
     display: flex;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
+
+    @media screen and (max-width: 768px) {
+        padding: 0em 0em 0em 0em;
+    }
 `
 
 export default function HomeCards({

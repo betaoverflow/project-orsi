@@ -127,7 +127,9 @@ function hero() {
 							as an avenue to widen their horizon by exchange of
 							knowledge and application of techniques
 							<br />
-							<Button>Download Brochure</Button>
+							<a href="https://orsihq.org/administration/" target="_blank" rel="noopener noreferrer">
+							<Button>Register / Login</Button>
+							</a>
 						</Content>
 					</Heading>
 				</Close>
